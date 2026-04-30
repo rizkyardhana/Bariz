@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bariz</title>
+    <link rel="icon" href="image/logo/logo bariz.png" type="image/png">
+    <meta name="description"
+        content="Bariz - Tote Bag dengan Lukisan Eksklusif. Seni untuk Anda Pakai. Koleksi terbatas handmade tote bag dengan sentuhan artistik.">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Fonts for Luxury Feel -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <!-- Artistic Elements -->
+        <div class="loading-art-elements">
+            <div class="art-stroke"></div>
+            <div class="art-stroke"></div>
+            <div class="art-stroke"></div>
+            <div class="art-stroke"></div>
+        </div>
+
+        <!-- Color Palette Dots -->
+        <div class="color-dots">
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+            <div class="color-dot"></div>
+        </div>
+
+        <!-- Corner Decorations -->
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="image/logo/logo bariz.png" alt="Logo Bariz" class="bariz-logo">
+            </div>
+            <div class="loading-text">
+                <h2>Bariz</h2>
+                <p>Seni yang Dipakai, Cerita yang Dihidupi</p>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="loading-dots">
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                </div>
+                <span class="progress-text" id="progressText">Memuat...</span>
+            </div>
+            <div class="loading-tagline">Seni untuk Anda Pakai</div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="image/logo/logo bariz.png" alt="Bariz Logo" class="logo-image">
+                    <h2>Bariz</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#products" class="nav-link">Koleksi</a></li>
+                    <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#team" class="nav-link">Tim Kami</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                    <li>
+                        <a href="#" class="nav-link cart-icon" id="cartIcon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>✨ Koleksi Eksklusif 2024</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-main">Bariz</span>
+                <span class="hero-title-accent">Ekonomi Kreatif</span>
+            </h1>
+            <p class="hero-subtitle">Seni yang Dipakai, Cerita yang Dihidupi</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">19+</span>
+                    <span class="stat-label">Seniman Tuli Terlibat</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Lukisan Original</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Kreativitas</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="cta-button primary" onclick="scrollToSection('products')">
+                    <i class="fas fa-palette"></i> Jelajahi Koleksi
+                </button>
+                <button class="cta-button secondary" onclick="scrollToSection('about')">
+                    <i class="fas fa-info-circle"></i> Cerita Kami
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <img src="image/logo/logo bariz putih.png" alt="Bariz Tote Bag Collection" class="hero-main-image">
+                <!-- Artistic Elements -->
+                <div class="hero-art-elements">
+                    <div class="paint-stroke"></div>
+                    <div class="paint-stroke"></div>
+                    <div class="paint-stroke"></div>
+                    <div class="art-color-dot"></div>
+                    <div class="art-color-dot"></div>
+                    <div class="art-color-dot"></div>
+                    <div class="art-color-dot"></div>
+                    <div class="brush-tip"></div>
+                    <div class="brush-tip"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-card card-1">
+                        <img src="image/logo/tuli.jpg" alt="Floral Design">
+                    </div>
+                    <div class="floating-card card-2">
+                        <img src="image/logo/tangan.jpg" alt="Cultural Heritage">
+                    </div>
+                    <div class="floating-card card-3">
+                        <img src="image/logo/kuas.jpg" alt="Iconic Landmark">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="hero-scroll" onclick="scrollToSection('products')">
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                    <span class="scroll-instruction">Jelajahi Koleksi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Eksklusif</h2>
+            <p class="section-subtitle">Setiap tas merupakan karya seni orisinal yang dibuat dari proses kreatif seniman
+                Tuli, menghadirkan nilai fungsi sekaligus makna.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="lukisan"><i class=""></i> Karya Lukisan Asli</button>
+                <button class="filter-btn" data-filter="floral"><i class=""></i> Totebag Lukisan Asli</button>
+                <button class="filter-btn" data-filter="print"><i class=""></i> Totebag Print</button>
+                <button class="filter-btn" data-filter="pouch"><i class=""></i> Pouch</button>
+                <button class="filter-btn" data-filter="masker"><i class=""></i> Masker</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Gallery -->
+    <section class="lifestyle">
+        <div class="container">
+            <h2 class="section-title">Inspirasi Gaya</h2>
+            <p class="section-subtitle">Ide penggunaan produk Bariz dalam aktivitas sehari-hari</p>
+
+            <div class="lifestyle-grid">
+                <!-- Aktivitas Harian -->
+                <div class="lifestyle-item">
+                    <img src="https://png.pngtree.com/template/20250913/ourlarge/pngtree-lifestyle-black-tote-bag-mockup-with-faceless-human-holding-in-front-image_2058279.webp"
+                        alt="Totebag untuk aktivitas harian" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3>Aktivitas Sehari-hari</h3>
+                        <p>Digunakan untuk kegiatan santai seperti berjalan atau ke kafe.</p>
+                    </div>
+                </div>
+
+                <!-- Kerja & Kampus -->
+                <div class="lifestyle-item">
+                    <img src="https://www.rukita.co/stories/wp-content/uploads/2022/01/tas-ngampus-untuk-kuliah-ke-kampus-1.jpg"
+                        alt="Totebag untuk kerja dan kampus" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3>Kerja & Kampus</h3>
+                        <p>Mendukung tampilan rapi dengan sentuhan karya seni.</p>
+                    </div>
+                </div>
+
+                <!-- Akhir Pekan -->
+                <div class="lifestyle-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0305/2116/3913/files/rDSC01935_480x480.webp?v=1709696307"
+                        alt="Totebag untuk akhir pekan" class="lifestyle-img">
+                    <div class="lifestyle-overlay">
+                        <h3>Akhir Pekan</h3>
+                        <p>Praktis membawa kebutuhan saat beraktivitas di luar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Cerita Bariz</h2>
+                    <p>
+                        Bariz lahir pada 2 Februari 2020 di Yogyakarta sebagai ruang berkarya dan berwirausaha bagi
+                        seniman Tuli dalam bidang ekonomi kreatif. Bariz hadir dengan semangat membangun kemandirian
+                        melalui seni, serta membuktikan bahwa keterbatasan bukanlah hambatan untuk terus berkarya dan
+                        berkembang.
+                    </p>
+                    <p>
+                        Setiap produk Bariz merupakan perwujudan karya seni yang diaplikasikan ke dalam produk
+                        fungsional seperti totebag, pouch, dan masker. Karya dibuat melalui proses lukisan tangan
+                        langsung maupun cetak dari ilustrasi orisinal, sehingga setiap produk membawa nilai seni,
+                        identitas, dan pesan inklusivitas yang dapat digunakan dalam kehidupan sehari-hari.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-palette"></i>
+                            <span>Karya Seniman Tuli</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-paper"></i>
+                            <span>Lukisan Tangan & Printing Karya</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-universal-access"></i>
+                            <span>Mendukung Ekonomi Kreatif Inklusif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-paint-brush"></i>
+                        <p>Proses Berkarya Seniman Tuli Bariz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Tim Bariz</h2>
+            <p class="section-subtitle">Orang-orang di balik proses kreatif dan pengembangan Bariz</p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="image/tim kami/bagas.jpg" alt="Profil Bagas"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>';">
+                    </div>
+                    <div class="team-info">
+                        <h3>Bagas Kara</h3>
+                        <p class="team-role">Founder & Seniman Tuli</p>
+                        <p class="team-desc">
+                            Seniman Tuli asal Yogyakarta yang mendirikan Bariz sebagai ruang berkarya dan berwirausaha
+                            di bidang ekonomi kreatif berbasis seni dan inklusivitas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="image/tim kami/rizki.PNG" alt="Profil Rizky"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>';">
+                    </div>
+                    <div class="team-info">
+                        <h3>Rizky Ardhana</h3>
+                        <p class="team-role">Co-Founder & Web Developer</p>
+                        <p class="team-desc">
+                            Bertanggung jawab dalam pengembangan platform digital Bariz serta mendukung
+                            penyampaian karya dan cerita seniman Tuli melalui media web.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan Umum</h2>
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara merawat produk Bariz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Untuk menjaga kualitas produk, disarankan mencuci secara manual dengan lembut menggunakan
+                            sabun ringan.
+                            Hindari pemutih, mesin cuci, dan perendaman terlalu lama. Jemur di tempat teduh agar warna
+                            dan karya tetap awet.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah produk Bariz dibuat secara handmade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Ya. Produk Bariz merupakan hasil karya seniman Tuli.
+                            Beberapa produk dilukis langsung dengan tangan, sementara produk lainnya menggunakan teknik
+                            printing dari karya ilustrasi asli seniman.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama proses produksi dan pengiriman?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Produk siap kirim akan diproses dalam 1–3 hari kerja.
+                            Untuk produk custom atau pesanan khusus, waktu produksi menyesuaikan jumlah dan tingkat
+                            kerumitan desain.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah Bariz menerima pesanan custom atau kerja sama?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Ya. Bariz terbuka untuk pesanan custom, kolaborasi, maupun kerja sama kegiatan yang
+                            mendukung ekonomi kreatif dan inklusivitas.
+                            Silakan hubungi kami untuk diskusi lebih lanjut.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+62 889-5673-306</p>
+                            <small>Fast Response</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>bariz.id@gmail.com</p>
+                            <small>Business Inquiries</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>@bariz.id</p>
+                            <small>Latest Updates</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Studio Bariz</h3>
+                            <p>Yogyakarta, Indonesia</p>
+                            <small>By Appointment Only</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="email" placeholder="Email Aktif" required>
+                        <input type="tel" placeholder="Nomor WhatsApp">
+                        <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BARIZ</h3>
+                    <p>Tote Bag Lukisan Eksklusif - Seni untuk Anda Pakai</p>
+                    <div class="payment-methods">
+                        <span>Metode Pembayaran:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#products">Koleksi</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Kami</h4>
+                    <p>Ikuti journey kreatif kami dan dapatkan update terbaru!</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bariz.id" class="social-link" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span></span>
+                        </a>
+                        <a href="https://wa.me/6282325612511" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span></span>
+                        </a>
+                        <a href="https://youtube.com/@bariz" class="social-link" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bariz. All rights reserved. | Crafted with <i class="fas fa-heart"></i> in Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-bag"></i> Keranjang Belanja</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <div class="total-amount">
+                    <span>Total:</span>
+                    <span>Rp <span id="cartTotal">0</span></span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <i class="fas fa-credit-card"></i> Lanjut ke Pembayaran
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="product-modal-content">
+            <span class="close-product-modal">&times;</span>
+            <div class="product-modal-body" id="productModalBody">
+                <!-- Product detail will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
