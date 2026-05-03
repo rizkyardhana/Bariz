@@ -33,7 +33,7 @@ function initializeWebsite() {
     showLoadingScreen();
 
     // Initialize all website functions
-    loadProducts('all', true); // Pass true to indicate initial load - show all categories
+    loadProducts('lukisan', true); // Pass true to indicate initial load - show default Karya Lukisan Asli category
     setupEventListeners();
     initializeCartWithItems();
     updateCartCount();
