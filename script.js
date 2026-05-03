@@ -517,7 +517,7 @@ No. HP:
 Mohon konfirmasi ketersediaan produk dan metode pembayaran. Terima kasih.`;
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/6282325612511?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/628895673306?text=${encodedMessage}`;
 
         // Open WhatsApp
         window.open(whatsappUrl, '_blank');
