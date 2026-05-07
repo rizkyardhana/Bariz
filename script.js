@@ -522,9 +522,17 @@ Mohon konfirmasi ketersediaan produk dan metode pembayaran. Terima kasih.`;
         const whatsappUrl = `https://wa.me/628895673306?text=${encodedMessage}`;
 
         // Open WhatsApp
-        window.open(whatsappUrl, '_blank');
+        // iOS/Safari sering memblokir window.open berbasis interaksi; gunakan anchor trigger yang lebih aman.
+        const a = document.createElement('a');
+        a.href = whatsappUrl;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
 
         showNotification('Membuka WhatsApp untuk konfirmasi pesanan...', 'success');
+
 
         // Clear cart after checkout
         cart = [];
