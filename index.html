@@ -541,8 +541,12 @@
     </div>
 
     <!-- Loading Spinner -->
-    <div class="loading-spinner" id="loadingSpinner">
-        <div class="spinner"></div>
+    <div class="loading-spinner" id="loadingSpinner" aria-live="polite" aria-busy="true">
+        <div class="loading-spinner-content">
+            <img src="image/logo/logo bariz putih.png" alt="Logo Bariz" class="loading-spinner-logo">
+            <div class="spinner" aria-hidden="true"></div>
+            <div class="loading-spinner-text">Memuat...</div>
+        </div>
     </div>
 
     <script src="products.js"></script>
