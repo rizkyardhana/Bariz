@@ -206,6 +206,7 @@ function setupEventListeners() {
         openCart();
     });
 
+
     closeCart.addEventListener('click', closeCartModal);
 
     // Close cart when clicking outside
@@ -225,7 +226,8 @@ function setupEventListeners() {
     });
 
     // Checkout button
-    checkoutBtn.addEventListener('click', proceedToCheckout);
+    checkoutBtn.addEventListener('click', proceedToWhatsApp);
+
 
     // Contact form
     contactForm.addEventListener('submit', handleContactForm);
@@ -482,7 +484,7 @@ function closeCartModal() {
 }
 
 
-function proceedToCheckout() {
+function proceedToWhatsApp() {
     if (cart.length === 0) {
         showNotification('Keranjang belanja kosong!', 'error');
         return;
