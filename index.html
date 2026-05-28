@@ -186,6 +186,7 @@
 
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="lukisan"><i class=""></i> Karya Lukisan Asli</button>
+                <button class="filter-btn active" data-filter="lukisan"><i class=""></i> Lukisan di atas kertas</button>
                 <button class="filter-btn" data-filter="lukisan-asli"><i class=""></i> Totebag Lukisan Asli</button>
                 <button class="filter-btn" data-filter="print"><i class=""></i> Totebag Print</button>
                 <button class="filter-btn" data-filter="payung"><i class=""></i> Payung</button>
@@ -401,7 +402,7 @@
                         <i class="fab fa-whatsapp"></i>
                         <div>
                             <h3>WhatsApp</h3>
-                            <p>+62 889-5673-306</p>
+                            <p><a href="https://wa.me/628895673306" target="_blank" rel="noopener noreferrer">+62 889-5673-306</a></p>
                             <small>Fast Response</small>
                         </div>
                     </div>
@@ -490,7 +491,7 @@
                             <i class="fab fa-instagram"></i>
                             <span></span>
                         </a>
-                        <a href="https://wa.me/6282325612511" class="social-link" target="_blank" title="WhatsApp">
+                        <a href="https://wa.me/628895673306" class="social-link" target="_blank" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                             <span></span>
                         </a>
@@ -541,8 +542,12 @@
     </div>
 
     <!-- Loading Spinner -->
-    <div class="loading-spinner" id="loadingSpinner">
-        <div class="spinner"></div>
+    <div class="loading-spinner" id="loadingSpinner" aria-live="polite" aria-busy="true">
+        <div class="loading-spinner-content">
+            <img src="image/logo/logo bariz putih.png" alt="Logo Bariz" class="loading-spinner-logo">
+            <div class="spinner" aria-hidden="true"></div>
+            <div class="loading-spinner-text">Memuat...</div>
+        </div>
     </div>
 
     <script src="products.js"></script>

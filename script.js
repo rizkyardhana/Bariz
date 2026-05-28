@@ -206,6 +206,7 @@ function setupEventListeners() {
         openCart();
     });
 
+
     closeCart.addEventListener('click', closeCartModal);
 
     // Close cart when clicking outside
@@ -225,7 +226,8 @@ function setupEventListeners() {
     });
 
     // Checkout button
-    checkoutBtn.addEventListener('click', proceedToCheckout);
+    checkoutBtn.addEventListener('click', proceedToWhatsApp);
+
 
     // Contact form
     contactForm.addEventListener('submit', handleContactForm);
@@ -482,7 +484,7 @@ function closeCartModal() {
 }
 
 
-function proceedToCheckout() {
+function proceedToWhatsApp() {
     if (cart.length === 0) {
         showNotification('Keranjang belanja kosong!', 'error');
         return;
@@ -517,12 +519,19 @@ No. HP:
 Mohon konfirmasi ketersediaan produk dan metode pembayaran. Terima kasih.`;
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/6282325612511?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/628895673306?text=${encodedMessage}`;
 
-        // Open WhatsApp
-        window.open(whatsappUrl, '_blank');
+        // Open WhatsApp tanpa menahan flow dengan notifikasi.
+        // iOS/Safari sering memblokir window.open; gunakan anchor trigger yang lebih aman.
+        const a = document.createElement('a');
+        a.href = whatsappUrl;
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
 
-        showNotification('Membuka WhatsApp untuk konfirmasi pesanan...', 'success');
+
 
         // Clear cart after checkout
         cart = [];

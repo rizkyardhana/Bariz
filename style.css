@@ -3032,6 +3032,40 @@ h6 {
     align-items: center;
 }
 
+.loading-spinner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.loading-spinner-logo {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 25px rgba(26, 26, 46, 0.18));
+    animation: loadingLogoFloat 2.2s ease-in-out infinite;
+}
+
+@keyframes loadingLogoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.loading-spinner-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
 .spinner {
     width: 50px;
     height: 50px;
@@ -3040,6 +3074,7 @@ h6 {
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
+
 
 @keyframes spin {
     0% {
