@@ -542,13 +542,9 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 29,
-=======
-        id: 27,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Candi Prambanan Series",
-        description: "Karya ini mengeksplorasi dialektika antara monumentalitas arsitektur Candi Prambanan dan pusaran energi spiritual yang terus beresonansi di dalamnya. Struktur geometris yang kokoh berdialog dengan medan cahaya dinamis, menghadirkan ketegangan indah antara permanensi bentuk dan fluiditas spiritual.",
+        description: "Karya ini mengeksplorasi dialektika antara monumentalitas arsitektur Candi Prambanan and pusaran energi spiritual yang terus beresonansi di dalamnya. Struktur geometris yang kokoh berdialog dengan medan cahaya dinamis, menghadirkan ketegangan indah antara permanensi bentuk dan fluiditas spiritual.",
         price: 6500000,
         originalPrice: 7000000,
         category: "lukisan",
@@ -567,7 +563,7 @@ const products = [
     {
         id: 30,
         name: "Klenteng di Pusat Kota",
-        description: "Karya ini mengeksplorasi klenteng sebagai mozaik budaya Yogyakarta, memadukan teknik opaque pada arsitektur dan aquarel transparan untuk cahaya lampion. Ruang sakral ini menciptakan dialog harmonis antara keteguhan iman masa lampau dan ritme kehidupan urban kontemporer.",
+        description: "Karya ini mengeksplorasi klenteng sebagai mozaik budaya Yogyakarta, memadukan teknik opaque pada arsitektur dan aquarel transparan untuk cahaya lampion. Ruang sakral ini menciptakan dialog harmonis antara keteguham iman masa lampau dan ritme kehidupan urban kontemporer.",
         price: 6500000,
         originalPrice: 7000000,
         category: "lukisan",
@@ -622,11 +618,7 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 33,
-=======
-        id: 31,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Pradaksina Jalan Cahaya",
         description: "Karya ini memvisualisasikan hormat pada ritual sakral Candi Borobudur. Garis abu-abu merekam harmoni langkah manusia dengan rotasi kosmos di bawah langit malam yang magis, menciptakan meditasi visual tentang keselarasan alam semesta",
         price: 6500000,
@@ -645,7 +637,6 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 34,
         name: "Candi Plaosan",
         description: "Karya ini memvisualisasikan kemegahan Candi Plaosan melalui dominasi warna merah dan jingga yang membara. Sentuhan biru, hijau, dan kuning neon pada pepohonan menghadirkan nuansa magis, sementara figur manusia di depan candi mempertegas harmoni kehidupan dan keabadian arsitektur.",
@@ -723,19 +714,12 @@ const products = [
     },
     {
         id: 38,
-=======
-        id: 32,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Kehidupan Kota di Malam Hari",
         description: "Karya ini mengeksplorasi kepadatan urban dan ritme visual kota yang tak pernah tidur melalui sapuan gestur ekspresif yang intens. Denyut nadi kehidupan malam direkam dalam lapisan warna berani, memancarkan energi kolektif dari sebuah harmoni pergerakan konstan.",
         price: 7500000,
         originalPrice: 8000000,
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/11.jpg"],
-=======
-        images: ["image/karya lukisan asli/7.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -748,7 +732,6 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 39,
         name: "Metabolisme Perkotaan",
         description: "Karya ini memetakan sirkulasi jaringan urban untuk memvisualisasikan hiruk-pikuk kota layaknya sebuah organisme hidup yang terus bernapas dan beregenerasi. Kontras antara arsitektur kolonial dan denyut pembangunan kontemporer merepresentasikan ekologi perkotaan tempat segala sesuatu senantiasa runtuh dan bertumbuh.",
@@ -771,11 +754,6 @@ const products = [
         id: 40,
         name: "Antara Dua Gerbang",
         description: "Karya ini menyajikan rekonstruksi visual dramatis tentang konfrontasi sejarah antara kedaulatan tradisional dan kekuatan kolonial yang berbenturan keras. Melalui komposisi tegas dan elemen anakronistik, lukisan ini merangkai narasi waktu berlapis tentang kegigihan perlawanan yang melampaui sejarah spesifik.",
-=======
-        id: 33,
-        name: "Metabolisme Perkotaan",
-        description: "Karya ini memetakan sirkulasi jaringan urban untuk memvisualisasikan hiruk-pikuk kota layaknya sebuah organisme hidup yang terus bernapas dan beregenerasi. Kontras antara arsitektur kolonial dan denyut pembangunan kontemporer merepresentasikan ekologi perkotaan tempat segala sesuatu senantiasa runtuh dan bertumbuh.",
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         price: 21000000,
         originalPrice: 21500000,
         category: "lukisan",
@@ -792,7 +770,6 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 41,
         name: "Navigasi Kolektif",
         description: "Karya ini menghadirkan metafora visual memukau tentang perjalanan kolektif yang berani menembus batas-batas keragaman budaya Nusantara. Berbagai figur tradisional dan kontemporer bersatu dalam perahu simbolis, menggemakan narasi harmoni serta solidaritas sebagai kekuatan abadi dalam menghadapi dinamika zaman.",
@@ -800,15 +777,6 @@ const products = [
         originalPrice: 21500000,
         category: "lukisan",
         images: ["image/karya lukisan asli/14.png"],
-=======
-        id: 34,
-        name: "Antara Dua Gerbang",
-        description: "Karya ini menyajikan rekonstruksi visual dramatis tentang konfrontasi sejarah antara kedaulatan tradisional dan kekuatan kolonial yang berbenturan keras. Melalui komposisi tegas dan elemen anakronistik, lukisan ini merangkai narasi waktu berlapis tentang kegigihan perlawanan yang melampaui sejarah spesifik.",
-        price: 21000000,
-        originalPrice: 21500000,
-        category: "lukisan",
-        images: ["image/karya lukisan asli/9.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -821,7 +789,6 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 42,
         name: "Dualitas Etika",
         description: "Karya ini mengeksplorasi dikotomi etika melalui representasi dua kekuatan mitologis berlawanan yang berbenturan dalam sebuah ketegangan dinamis. Figur simbolik kebajikan dan kegelapan menyatu untuk menciptakan metafora visual yang mendalam tentang konflik batin yang terus bergema dalam jiwa manusia.",
@@ -829,15 +796,6 @@ const products = [
         originalPrice: 12000000,
         category: "lukisan",
         images: ["image/karya lukisan asli/15.jpg"],
-=======
-        id: 35,
-        name: "Navigasi Kolektif",
-        description: "Karya ini menghadirkan metafora visual memukau tentang perjalanan kolektif yang berani menembus batas-batas keragaman budaya Nusantara. Berbagai figur tradisional dan kontemporer bersatu dalam perahu simbolis, menggemakan narasi harmoni serta solidaritas sebagai kekuatan abadi dalam menghadapi dinamika zaman.",
-        price: 21000000,
-        originalPrice: 21500000,
-        category: "lukisan",
-        images: ["image/karya lukisan asli/10.png"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -850,19 +808,11 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 43,
         name: "Memori Kultural",
         description: "Karya ini mengeksplorasi kedalaman memori kultural melalui sosok feminin elegan yang berdialog dengan keanggunan arsitektur historis. Sapuan garis ekspresif dan perpaduan media yang dinamis menciptakan narasi rekonstruksi visual yang menghidupkan kembali identitas masa lalu sebagai pijakan kultural kini.",
         price: 10500000,
         originalPrice: 11000000,
-=======
-        id: 36,
-        name: "Dualitas Etika",
-        description: "Karya ini mengeksplorasi dikotomi etika melalui representasi dua kekuatan mitologis berlawanan yang berbenturan dalam sebuah ketegangan dinamis. Figur simbolik kebajikan dan kegelapan menyatu untuk menciptakan metafora visual yang mendalam tentang konflik batin yang terus bergema dalam jiwa manusia.",
-        price: 11500000,
-        originalPrice: 12000000,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         category: "lukisan",
         images: ["image/karya lukisan asli/16.jpg"],
         features: {
@@ -877,40 +827,13 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 44,
-=======
-        id: 37,
-        name: "Memori Kultural",
-        description: "Karya ini mengeksplorasi kedalaman memori kultural melalui sosok feminin elegan yang berdialog dengan keanggunan arsitektur historis. Sapuan garis ekspresif dan perpaduan media yang dinamis menciptakan narasi rekonstruksi visual yang menghidupkan kembali identitas masa lalu sebagai pijakan kultural kini.",
-        price: 10500000,
-        originalPrice: 11000000,
-        category: "lukisan",
-        images: ["image/karya lukisan asli/12.jpg"],
-        features: {
-            "Nama Seniman": "Bagaskara Maharastu P.I",
-            "Media": "Campur media di atas kanvas",
-            "Ukuran": "60cm x 80cm",
-            "Teknik": "Opaque & Aquarel",
-            "Finishing": "Dilapisi Varnish",
-            "Tahun": "2025",
-        },
-        inStock: true,
-        tags: ["lukisan", "karya-tuli", "orisinal"]
-    },
-    {
-        id: 38,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Pulsa Pasar Tradisional",
         description: "Karya ini merekam denyut pasar tradisional sebagai ekosistem kehidupan kolektif yang tak henti digerakkan oleh dinamika interaksi sosial dan ekonomi rakyat. Melalui komposisi padat dan garis ekspresif, kanvas ini mengabadikan kehangatan humanisme dan keaslian denyut budaya lokal.",
         price: 8000000,
         originalPrice: 8500000,
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/17.jpg"],
-=======
-        images: ["image/karya lukisan asli/13.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -923,21 +846,13 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 45,
-=======
-        id: 39,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Cagar Budaya",
         description: "Karya ini merenungkan hubungan simbiosis harmonis antara warisan arsitektural purba dan kedamaian kehidupan agraris yang mengitarinya. Pemukiman di kaki candi digambarkan sebagai ruang hidup yang bernaung secara spiritual, menciptakan narasi abadi tentang kontinuitas budaya masa lalu dan kini.",
         price: 15500000,
         originalPrice: 16000000,
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/18.jpg"],
-=======
-        images: ["image/karya lukisan asli/14.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -950,21 +865,13 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 46,
-=======
-        id: 40,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Fantasi Jamur",
         description: "Karya ini menyajikan eksplorasi imajinatif tentang ekosistem jamur fantastis yang mempesona, dihuni oleh berbagai entitas magis yang tersembunyi. Melalui detail alam yang imersif, lukisan ini merangkai dunia alternatif yang menawarkan penyegaran tematik jauh dari kebisingan narasi urban.",
         price: 21000000,
         originalPrice: 21500000,
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/19.jpg"],
-=======
-        images: ["image/karya lukisan asli/15.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -977,7 +884,6 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 47,
         name: "Pemandangan Agraria",
         description: "Karya ini mengeksplorasi lanskap agraris dan arsitektur vernakular dengan palet monokromatik atmosferik yang memancarkan ketenangan mendalam. Tarian sawah yang meliuk dan pegunungan pelindung merajut harmoni visual sempurna yang merepresentasikan kedamaian hidup pedesaan yang sejati.",
@@ -1000,11 +906,6 @@ const products = [
         id: 48,
         name: "Lanskap Budaya",
         description: "Karya ini merangkai sintesis visual agung yang menyatukan arsitektur monumental, bentang lanskap agraris, dan kehangatan hunian vernakular. Menempatkan struktur bersejarah sebagai penjaga kehidupan kontemporer, lukisan ini menuturkan sebuah epos visual abadi tentang kesinambungan warisan budaya lintas zaman.",
-=======
-        id: 41,
-        name: "Pemandangan Agraria",
-        description: "Karya ini mengeksplorasi lanskap agraris dan arsitektur vernakular dengan palet monokromatik atmosferik yang memancarkan ketenangan mendalam. Tarian sawah yang meliuk dan pegunungan pelindung merajut harmoni visual sempurna yang merepresentasikan kedamaian hidup pedesaan yang sejati.",
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         price: 3500000,
         originalPrice: 4000000,
         category: "lukisan",
@@ -1021,40 +922,13 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 49,
-=======
-        id: 42,
-        name: "Lanskap Budaya",
-        description: "Karya ini merangkai sintesis visual agung yang menyatukan arsitektur monumental, bentang lanskap agraris, dan kehangatan hunian vernakular. Menempatkan struktur bersejarah sebagai penjaga kehidupan kontemporer, lukisan ini menuturkan sebuah epos visual abadi tentang kesinambungan warisan budaya lintas zaman.",
-        price: 3500000,
-        originalPrice: 4000000,
-        category: "lukisan",
-        images: ["image/karya lukisan asli/17.jpg"],
-        features: {
-            "Nama Seniman": "Bagaskara Maharastu P.I",
-            "Media": "Campur media di atas kanvas",
-            "Ukuran": "50cm x 60cm",
-            "Teknik": "Opaque & Aquarel",
-            "Finishing": "Dilapisi Varnish",
-            "Tahun": "2025",
-        },
-        inStock: true,
-        tags: ["lukisan", "karya-tuli", "orisinal"]
-    },
-    {
-        id: 43,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Permadani Iman",
         description: "Karya ini menelusuri keberagaman religius Nusantara melalui pendekatan kolase kanvas yang kaya akan tekstur inovatif dan berlapis. Potongan material yang membentuk harmoni mozaik tempat ibadah melahirkan metafora visual bertenaga tentang indahnya kesatuan jiwa di tengah lautan perbedaan.",
         price: 10500000,
         originalPrice: 11000000,
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/22.jpg"],
-=======
-        images: ["image/karya lukisan asli/18.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -1067,21 +941,13 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 50,
-=======
-        id: 44,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "BISINDO di Rumah",
         description: "Karya ini mengarahkan lensa naratif ke ranah privat untuk merepresentasikan bagaimana identitas bahasa isyarat dibentuk dan dirawat di dalam kehangatan keluarga. Sentuhan personal ini menandai perkembangan batin sang seniman, bergerak dari advokasi publik menuju kedekatan interpersonal.",
         price: 21000000,
         originalPrice: 21500000,
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/23.jpg"],
-=======
-        images: ["image/karya lukisan asli/19.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -1094,21 +960,13 @@ const products = [
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
     {
-<<<<<<< HEAD
         id: 51,
-=======
-        id: 45,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Ambang Batas Kota",
         description: "Karya ini memaknai gerbang kota sebagai titik pertemuan dinamis antara warisan arsitektur tradisional dan ritme kehidupan kontemporer. Ambang batas ini ditangkap melalui lapisan tekstur padat, menghadirkan esensi transisi urban sebagai ekosistem hidup yang terus berevolusi.",
         price: "Sold",
         originalPrice: "Sold",
         category: "lukisan",
-<<<<<<< HEAD
         images: ["image/karya lukisan asli/24.jpg"],
-=======
-        images: ["image/karya lukisan asli/20.jpg"],
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         features: {
             "Nama Seniman": "Bagaskara Maharastu P.I",
             "Media": "Campur media di atas kanvas",
@@ -1120,13 +978,10 @@ const products = [
         inStock: false,
         tags: ["lukisan", "karya-tuli", "orisinal"]
     },
+
     // Payung Lukisan
     {
-<<<<<<< HEAD
         id: 52,
-=======
-        id: 46,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Suasana Candi Prambanan",
         description: "Karya ini mengeksplorasi monumentalitas Candi Prambanan sebagai saksi peradaban kuno yang berdialog dengan energi spiritual abadi. Melalui lapisan cat akrilik transparan pada kanvas payung, merangkai harmoni antara arsitektur purba dan kehidupan kontemporer, menghadirkan pelindung budaya melampaui fungsi fisik.",
         price: 1500000,
@@ -1145,11 +1000,7 @@ const products = [
         tags: ["payung", "karya-tuli", "orisinal", "candi-prambanan"]
     },
     {
-<<<<<<< HEAD
         id: 53,
-=======
-        id: 47,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Suasana Tugu Pal Yogyakarta",
         description: "Karya ini mengeksplorasi Tugu Pal Yogyakarta sebagai ikon urban yang menghubungkan stratifikasi sejarah dengan dinamika kota modern. Melalui tekstur padat cat akrilik, payung ini menangkap esensi transisi sebagai ekosistem hidup, melindungi pemakainya dari ritme perkotaan yang terus berubah.",
         price: 1500000,
@@ -1168,11 +1019,7 @@ const products = [
         tags: ["payung", "karya-tuli", "orisinal", "candi-prambanan"]
     },
     {
-<<<<<<< HEAD
         id: 54,
-=======
-        id: 48,
->>>>>>> b66515768e13856d4636020e0e22af5cbfa6e0a8
         name: "Suasana Keraton Yogyakarta",
         description: "Karya ini mengeksplorasi Keraton Yogyakarta sebagai jantung kebudayaan Jawa yang berdetak melintasi zaman. Melalui perpaduan warna dan bentuk pada medium payung, lukisan ini merangkai narasi keagungan tradisional yang beradaptasi dengan denyut kehidupan kontemporer.",
         price: 1500000,
@@ -1191,4 +1038,3 @@ const products = [
         tags: ["payung", "karya-tuli", "orisinal", "candi-prambanan"]
     }
 ];
-
