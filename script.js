@@ -118,53 +118,63 @@ function loadProducts(filter = 'all', isInitialLoad = false) {
             ? products
             : products.filter(product => product.category === filter);
 
-        productsGrid.innerHTML = filteredProducts.map(product => `
-            <div class="product-card" data-category="${product.category}">
-                <div class="product-image">
-                    <div class="image-placeholder loading">
-                        <i class="fas fa-spinner fa-spin"></i>
-                        <p>Loading...</p>
-                    </div>
-                    <img src="${product.images[0]}" alt="${product.name}" class="product-img" style="display: none;" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
-                    ${product.originalPrice > product.price ? `
-                        <div class="product-badge">Sale</div>
-                    ` : ''}
-                    ${!product.inStock ? `
-                        <div class="product-badge sold-out">Sold Out</div>
-                    ` : ''}
+        if (filteredProducts.length === 0) {
+            productsGrid.innerHTML = `
+                <div class="empty-state" style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem; color: #7f8c8d;">
+                    <i class="fas fa-box-open" style="font-size: 3.5rem; margin-bottom: 1.5rem; opacity: 0.5; color: #bdc3c7;"></i>
+                    <p style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 500;">Belum ada produk untuk kategori ini.</p>
+                    <p style="font-size: 0.95rem; opacity: 0.8;">Nantikan koleksi menarik kami berikutnya!</p>
                 </div>
-                <div class="product-info">
-                    <h3 class="product-title">${product.name}</h3>
-                    <p class="product-description">${product.description}</p>
-                    
-                    <div class="product-meta">
-                        <span class="product-category">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</span>
-                        <span class="product-stock ${product.inStock ? 'in-stock' : 'out-of-stock'}">
-                            ${product.inStock ? '✓ In Stock' : '✗ Out of Stock'}
-                        </span>
-                    </div>
-                    
-                    <div class="product-price">
-                        ${typeof product.price === 'number' ? `Rp ${product.price.toLocaleString('id-ID')}` : product.price}
-                        ${typeof product.originalPrice === 'number' && typeof product.price === 'number' && product.originalPrice > product.price ? `
-                            <span class="original-price">Rp ${product.originalPrice.toLocaleString('id-ID')}</span>
+            `;
+        } else {
+            productsGrid.innerHTML = filteredProducts.map(product => `
+                <div class="product-card" data-category="${product.category}">
+                    <div class="product-image">
+                        <div class="image-placeholder loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Loading...</p>
+                        </div>
+                        <img src="${product.images[0]}" alt="${product.name}" class="product-img" style="display: none;" onload="this.style.display='block'; this.previousElementSibling.style.display='none';">
+                        ${product.originalPrice > product.price ? `
+                            <div class="product-badge">Sale</div>
+                        ` : ''}
+                        ${!product.inStock ? `
+                            <div class="product-badge sold-out">Sold Out</div>
                         ` : ''}
                     </div>
-                    
-                    <div class="product-actions">
-                        <button class="add-to-cart" 
-                                onclick="addToCart(${product.id})" 
-                                ${!product.inStock ? 'disabled' : ''}>
-                            <i class="fas fa-shopping-bag"></i>
-                            ${product.inStock ? 'Tambah ke Keranjang' : 'Sold Out'}
-                        </button>
-                        <button class="view-details" onclick="openProductModal(${product.id})">
-                            <i class="fas fa-eye"></i> Lihat Detail
-                        </button>
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-description">${product.description}</p>
+                        
+                        <div class="product-meta">
+                            <span class="product-category">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</span>
+                            <span class="product-stock ${product.inStock ? 'in-stock' : 'out-of-stock'}">
+                                ${product.inStock ? '✓ In Stock' : '✗ Out of Stock'}
+                            </span>
+                        </div>
+                        
+                        <div class="product-price">
+                            ${typeof product.price === 'number' ? `Rp ${product.price.toLocaleString('id-ID')}` : product.price}
+                            ${typeof product.originalPrice === 'number' && typeof product.price === 'number' && product.originalPrice > product.price ? `
+                                <span class="original-price">Rp ${product.originalPrice.toLocaleString('id-ID')}</span>
+                            ` : ''}
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="add-to-cart" 
+                                    onclick="addToCart(${product.id})" 
+                                    ${!product.inStock ? 'disabled' : ''}>
+                                <i class="fas fa-shopping-bag"></i>
+                                ${product.inStock ? 'Tambah ke Keranjang' : 'Sold Out'}
+                            </button>
+                            <button class="view-details" onclick="openProductModal(${product.id})">
+                                <i class="fas fa-eye"></i> Lihat Detail
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `).join('');
+            `).join('');
+        }
 
         // Hide white spinner if it was shown
         if (!isInitialLoad) {
