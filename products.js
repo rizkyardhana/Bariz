@@ -619,7 +619,7 @@ const products = [
     },
     {
         id: 33,
-        name: "Pradaksina Jalan Cahaya",
+        name: "Siluet Agung Borobudur",
         description: "Karya ini memvisualisasikan hormat pada ritual sakral Candi Borobudur. Garis abu-abu merekam harmoni langkah manusia dengan rotasi kosmos di bawah langit malam yang magis, menciptakan meditasi visual tentang keselarasan alam semesta",
         price: 6500000,
         originalPrice: 7000000,
@@ -638,7 +638,7 @@ const products = [
     },
     {
         id: 34,
-        name: "Candi Plaosan",
+        name: "Simfoni Senja Candi Plaosan",
         description: "Karya ini memvisualisasikan kemegahan Candi Plaosan melalui dominasi warna merah dan jingga yang membara. Sentuhan biru, hijau, dan kuning neon pada pepohonan menghadirkan nuansa magis, sementara figur manusia di depan candi mempertegas harmoni kehidupan dan keabadian arsitektur.",
         price: 6500000,
         originalPrice: 7000000,
@@ -657,7 +657,7 @@ const products = [
     },
     {
         id: 35,
-        name: "Candi Prambanan",
+        name: "Fajar Keemasan Prambanan",
         description: "Karya ini mengeksplorasi Candi Prambanan sebagai simbol spiritual dan warisan budaya yang hidup. Dominasi warna kuning dan hijau menghadirkan energi pagi yang hangat, sementara figur manusia dan alam membangun harmoni visual antara tradisi, kehidupan, dan kemegahan arsitektur candi.",
         price: 6500000,
         originalPrice: 7000000,
@@ -676,7 +676,7 @@ const products = [
     },
     {
         id: 36,
-        name: "Makam Raja-Raja Imogiri",
+        name: "Gerbang Keabadian Imogiri",
         description: "Karya ini merepresentasikan suasana sakral Makam Raja-Raja Imogiri melalui gapura dan tangga peziarahan yang penuh tekstur ekspresif. Dominasi langit merah muda dengan matahari merah dramatis berpadu dengan hijau tumbuhan di sekitarnya, menciptakan harmoni visual antara spiritualitas, perjalanan, dan ketenangan alam.",
         price: 6500000,
         originalPrice: 7000000,
@@ -695,7 +695,7 @@ const products = [
     },
     {
         id: 37,
-        name: "Candi Ratu Boko",
+        name: "Malam di Singgasana Ratu Boko",
         description: "Karya ini mengeksplorasi kemegahan Situs Ratu Boko dalam balutan suasana malam yang hening dan misterius. Dominasi warna biru tua dan hijau toska berpadu dengan cahaya rembulan, sementara figur manusia dan sentuhan pink pada tanaman menghadirkan harmoni antara ketenangan, sejarah, dan kehidupan.",
         price: 6500000,
         originalPrice: 7000000,
