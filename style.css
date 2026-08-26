@@ -2065,6 +2065,7 @@ h6 {
     max-width: 500px;
     max-height: 80vh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 

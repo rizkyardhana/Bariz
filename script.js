@@ -500,21 +500,16 @@ function proceedToWhatsApp() {
         return;
     }
 
-    showLoading();
+    // Buat ringkasan pesanan secara sinkron tanpa penundaan (setTimeout)
+    // Penundaan buatan sebelumnya menyebabkan popup blocker di HP memblokir redirect
+    const orderSummary = cart.map(item =>
+        `${item.name} (${item.quantity}x) - Rp ${(item.price * item.quantity).toLocaleString('id-ID')}`
+    ).join('\n');
 
-    // Simulate checkout process
-    setTimeout(() => {
-        hideLoading();
+    const totalAmount = cartTotal.toLocaleString('id-ID');
 
-        // Create order summary
-        const orderSummary = cart.map(item =>
-            `${item.name} (${item.quantity}x) - Rp ${(item.price * item.quantity).toLocaleString('id-ID')}`
-        ).join('\n');
-
-        const totalAmount = cartTotal.toLocaleString('id-ID');
-
-        // Create WhatsApp message (lebih formal & jelas)
-        const message = `Halo Bariz,
+    // Buat pesan WhatsApp
+    const message = `Halo Bariz,
 Saya ingin memesan produk dengan rincian sebagai berikut:
 
 ${orderSummary}
@@ -528,27 +523,25 @@ No. HP:
 
 Mohon konfirmasi ketersediaan produk dan metode pembayaran. Terima kasih.`;
 
-        const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/628895673306?text=${encodedMessage}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/628895673306?text=${encodedMessage}`;
 
-        // Open WhatsApp tanpa menahan flow dengan notifikasi.
-        // iOS/Safari sering memblokir window.open; gunakan anchor trigger yang lebih aman.
-        const a = document.createElement('a');
-        a.href = whatsappUrl;
-        a.setAttribute('target', '_blank');
-        a.setAttribute('rel', 'noopener noreferrer');
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
+    // Deteksi jika pengguna menggunakan perangkat mobile/seluler
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
+    if (isMobile) {
+        // Di HP, langsung ubah location.href agar membuka aplikasi native WhatsApp tanpa diblokir popup blocker
+        window.location.href = whatsappUrl;
+    } else {
+        // Di Desktop, buka di tab baru
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }
 
-
-        // Clear cart after checkout
-        cart = [];
-        updateCartCount();
-        updateCartTotal();
-        closeCartModal();
-    }, 2000);
+    // Clear cart after checkout
+    cart = [];
+    updateCartCount();
+    updateCartTotal();
+    closeCartModal();
 }
 
 
